@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/tick"
+        android:layout_centerVertical="true"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/cross"
+        android:background="@drawable/disabledtick"/>
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/disabledcross"/>
+    <View
+        android:layout_below="@id/cross"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

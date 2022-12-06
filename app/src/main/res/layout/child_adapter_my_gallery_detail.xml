@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOB ARRINT"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/commentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:paddingLeft="5dp"
+            android:text="(4:00 PM)"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/commentedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="23 November 2015"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="comment here"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

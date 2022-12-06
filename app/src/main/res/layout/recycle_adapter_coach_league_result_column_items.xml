@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+<!--    <TextView-->
+<!--        android:id="@+id/heading"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="-"-->
+<!--        android:gravity="center"-->
+<!--        android:singleLine="true"-->
+<!--        android:background="@color/grey1"-->
+<!--        android:layout_margin="1dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="1dp"
+        android:background="@color/grey1">
+        <EditText
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:text=""
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:dividerHeight="@null"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

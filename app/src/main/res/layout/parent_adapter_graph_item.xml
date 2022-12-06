@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/elementName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="TECHNICAL SCORE CHART"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@color/blue"/>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/donutProgress"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        custom:donut_finished_color="@color/blue"
+        custom:donut_finished_stroke_width="10dp"
+        custom:donut_unfinished_color="@color/grey1"
+        custom:donut_unfinished_stroke_width="10dp"
+        custom:donut_progress="0"
+        custom:donut_text_color="@color/darkYellow"
+        custom:donut_background_color="@color/grey2"
+        custom:donut_text_size="30sp"
+        android:visibility="gone"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey" />
+
+    <ListView
+        android:id="@+id/subElementListView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AREA OF DEVELOPMENT"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/areaOfDevelopment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/trainingPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAINING PLAN"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>

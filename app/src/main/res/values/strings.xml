@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Dunvant RFC</string>
+    <string name="internet_not_available">Please check your internet connection and try again.</string>
+
+    <string name="blackWhite">Black&amp;White</string>
+
+    <!-- Using ifacognew@gmail.com Facebook account -->
+    <string name="facebook_app_id">6978744498862697</string>
+
+    <string name="text_bluetooth_off">Bluetooth is Off</string>
+    <string name="text_bluetooth_on">Bluetooth is On</string>
+
+    <string name="text_enable">Enable</string>
+    <string name="text_disable">Disable</string>
+
+    <string name="text_view_paired">Paired Devices</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+
+    <string name="text_list_paired_devices">Paired Devices</string>
+    <string name="text_list_devices">List of Devices</string>
+
+    <string name="text_pair">Pair</string>
+
+
+    <!--whitelabel texts-->
+    <string name="ifa">Dunvant RFC</string>
+    <string name="select_ifa_member">Select Dunvant RFC Member</string>
+    <string name="ifa_member_list_empty">Dunvant RFC Member list empty</string>
+    <string name="ifa_dialog">Dunvant RFC...</string>
+    <string name="this_is_a_non_ifa_invite">This is a Non Dunvant RFC invite</string>
+    <string name="joined_ifa_sport">Joined Dunvant RFC Sport</string>
+    <string name="ifa_session">Dunvant RFC SESSIONS</string>
+    <string name="ifa_footbal_camp">Dunvant RFC CAMP</string>
+    <string name="ifa_career">PLAYERS CAREER</string>
+    <string name="ifa_football_camp">Dunvant RFC camp</string>
+    <string name="ifa_football_academy">Dunvant RFC ACADEMY</string>
+    <string name="share_with_ifa">Share with Dunvant RFC</string>
+    <string name="ifaMember">Dunvant RFC Member</string>
+    <string name="ifa_member_text">Dunvant RFC MEMBER</string>
+    <string name="non_ifa_member">NON Dunvant RFC MEMBERS</string>
+    <string name="title_activity_coach_rugby_screen">CoachRugbyScreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    // change in contact us xml : activity_start_module_contact_us
+
+    // change in parent_activity_sign_up_screen
+    // Trebanos RFC would like to keep you up to date with news, ticket information, merchandise offers and competitions. Are you happy to hear from us?*
+
+
+    <!--    &lt;!&ndash;whitelable texts&ndash;&gt;-->
+    <!--    <string name="ifa">IFA</string>-->
+    <!--    <string name="select_ifa_member">Select IFA Member</string>-->
+    <!--    <string name="ifa_member_list_empty">JSA Member list empty</string>-->
+    <!--    <string name="ifa_dialog">JSA...</string>-->
+    <!--    <string name="this_is_a_non_ifa_invite">This is a Non IFA invite</string>-->
+    <!--    <string name="joined_ifa_sport">Joined IFA Sport</string>-->
+    <!--    <string name="ifa_session">IFA SESSIONS</string>-->
+    <!--    <string name="ifa_footbal_camp">IFA FOOTBALL CAMP</string>-->
+    <!--    <string name="ifa_career">IFA CAREER</string>-->
+    <!--    <string name="ifa_football_camp">IFA Football camp</string>-->
+    <!--    <string name="ifa_football_academy">IFA FOOTBALL ACADEMY</string>-->
+    <!--    <string name="share_with_ifa">Share with IFA</string>-->
+    <!--    <string name="ifaMember">IfaMember</string>-->
+    <!--    <string name="ifa_member_text">IFA MEMBER</string>-->
+    <!--    <string name="non_ifa_member">NON IFA MEMBERS</string>-->
+    <string name="icon_heart">&#xf004;</string>
+
+
+</resources>

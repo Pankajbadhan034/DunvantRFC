@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/relativeMain">
+    <ImageView
+        android:id="@+id/picUrl"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@color/blue"/>
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_toRightOf="@+id/picUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOB ARRINT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        />
+    <TextView
+        android:id="@+id/createdDate"
+        android:layout_toRightOf="@+id/picUrl"
+        android:layout_below="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Since January 2016"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/indicatorImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

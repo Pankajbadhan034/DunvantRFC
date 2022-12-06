@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SESSION INFO"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/background"
+                android:weightSum="1"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtSession"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SESSION: "
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/sessionName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/darkYellow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lightGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTotalSessions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL SESSIONS: "
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalSessions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/darkYellow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lightGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtAttended"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ATTENDED: "
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/attendedSessions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/darkYellow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/lightGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtRemaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="REMAINING: "
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/remainingSessions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/darkYellow" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/academyImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/placeholder"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Distance -->
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DISTANCE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@color/blue"
+                android:padding="10dp"/>
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/distanceDonut"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                custom:donut_finished_color="@color/darkYellow"
+                custom:donut_finished_stroke_width="10dp"
+                custom:donut_unfinished_color="@color/grey1"
+                custom:donut_unfinished_stroke_width="10dp"
+                custom:donut_progress="0"
+                custom:donut_text_color="@color/darkYellow"
+                custom:donut_background_color="@color/grey2"
+                custom:donut_text_size="20sp"/>
+
+            <TextView
+                android:id="@+id/averageDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/distanceCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/distanceProgressBar"
+                style="@style/tallerBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/viewDetailsDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW DETAILS"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Distance end -->
+
+            <!-- Steps -->
+
+            <TextView
+                android:id="@+id/txtSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STEPS"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/stepsDonut"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                custom:donut_finished_color="@color/darkYellow"
+                custom:donut_finished_stroke_width="10dp"
+                custom:donut_unfinished_color="@color/grey1"
+                custom:donut_unfinished_stroke_width="10dp"
+                custom:donut_progress="0"
+                custom:donut_text_color="@color/darkYellow"
+                custom:donut_background_color="@color/grey2"
+                custom:donut_text_size="20sp"/>
+
+            <TextView
+                android:id="@+id/averageSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/stepsCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/stepsProgressBar"
+                style="@style/tallerBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:max="10" />
+
+            <Button
+                android:id="@+id/viewDetailsSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW DETAILS"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Steps End -->
+
+            <!-- Calories -->
+
+            <TextView
+                android:id="@+id/txtCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALORIES"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/caloriesDonut"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                custom:donut_finished_color="@color/darkYellow"
+                custom:donut_finished_stroke_width="10dp"
+                custom:donut_unfinished_color="@color/grey1"
+                custom:donut_unfinished_stroke_width="10dp"
+                custom:donut_progress="0"
+                custom:donut_text_color="@color/darkYellow"
+                custom:donut_background_color="@color/grey2"
+                custom:donut_text_size="20sp"/>
+
+            <TextView
+                android:id="@+id/averageCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/caloriesCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/caloriesProgressBar"
+                style="@style/tallerBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:max="10" />
+
+            <Button
+                android:id="@+id/viewDetailsCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW DETAILS"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Calories End -->
+
+            <!-- Heart Rate -->
+
+            <TextView
+                android:id="@+id/txtHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HEART RATE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/heartRateDonut"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                custom:donut_finished_color="@color/darkYellow"
+                custom:donut_finished_stroke_width="10dp"
+                custom:donut_unfinished_color="@color/grey1"
+                custom:donut_unfinished_stroke_width="10dp"
+                custom:donut_progress="0"
+                custom:donut_text_color="@color/darkYellow"
+                custom:donut_background_color="@color/grey2"
+                custom:donut_text_size="20sp"/>
+
+            <TextView
+                android:id="@+id/averageHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/heartRateCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/heartRateProgressBar"
+                style="@style/tallerBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:max="10" />
+
+            <Button
+                android:id="@+id/viewDetailsHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIEW DETAILS"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Heart Rate End -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

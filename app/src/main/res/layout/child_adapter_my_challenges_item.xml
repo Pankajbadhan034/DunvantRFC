@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chalangeClick">
+    <ImageView
+        android:id="@+id/chalangeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border_challenges"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="CHALLENGE TITLE"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00"
+            android:textColor="@color/red"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/byCoach"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Coach"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/category"
+            android:layout_below="@+id/title"
+           android:layout_toRightOf="@+id/byCoach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" (Category)"
+            android:textColor="@color/lightGrey"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/expirationDate"
+            android:layout_below="@+id/byCoach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiration Date: "
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/ExpireDate"
+            android:layout_below="@+id/byCoach"
+            android:layout_toRightOf="@+id/expirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Jan 2, 2016"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/targetScoretext"
+            android:layout_below="@+id/expirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Score: "
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/targetScore"
+            android:layout_below="@+id/expirationDate"
+            android:layout_toRightOf="@+id/expirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="20"
+            android:layout_marginTop="5dp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/divideLine"-->
+            <!--android:layout_below="@+id/expirationDate"-->
+            <!--android:layout_toRightOf="@+id/targetScore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:text="  |  "-->
+            <!--android:layout_marginTop="5dp"/>-->
+        <LinearLayout
+            android:layout_below="@+id/targetScoretext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/targetTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target Time: "
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/targetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:textColor="@color/blue"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

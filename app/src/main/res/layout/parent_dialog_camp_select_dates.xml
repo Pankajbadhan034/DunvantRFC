@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minWidth="400dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available dates"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@color/yellow" />
+
+    <GridView
+        android:id="@+id/datesGridView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:numColumns="2"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</LinearLayout>

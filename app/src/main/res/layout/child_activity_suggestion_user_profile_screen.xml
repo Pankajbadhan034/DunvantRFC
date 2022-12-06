@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dunvant.application.child.ChildSuggestionUserProfileScreen">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imgbg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/updateprofile"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aaron Simmonsion"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_horizontal">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:text="16 September 2010"/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/genderHeightWeight"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/yellow"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:text="(Male 80cm, 35 kg)"/>-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Friend Request"
+            android:layout_margin="10dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVOURITE TEAM"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/fav_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="League King"
+            android:paddingLeft="10dp"
+            android:visibility="gone"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVOURITE PLAYER"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/fav_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="League King"
+            android:paddingLeft="10dp"
+            android:visibility="gone"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVOURITE POSITION"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/fav_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="League King"
+            android:paddingLeft="10dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <Button
+                android:id="@+id/friendList"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FRIEND LIST"
+                android:background="@color/yellow"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/gallery"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="GALLERY"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/myGalleryList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

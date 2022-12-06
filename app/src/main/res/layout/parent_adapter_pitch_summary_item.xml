@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Location Name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/costLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="pitch name and cost"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGrey" />
+
+    <TextView
+        android:id="@+id/unavailableDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unavailable dates"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <ListView
+        android:id="@+id/bookingDatesListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/lightGrey">
+
+            <TextView
+                android:id="@+id/lblPitchAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PITCH AMOUNT"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/pitchAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblPitchBulkHourDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BULK HOUR DISCOUNT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/pitchBulkHourDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblPitchAdditionalDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDITIONAL DISCOUNT"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/pitchAdditionalDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/additionalDiscountLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get additional discount"
+        android:textColor="@color/red"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+</LinearLayout>

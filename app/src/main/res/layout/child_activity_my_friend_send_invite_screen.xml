@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".application.child.ChildMyFriendSendInviteScreen"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SEND INVITES"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/header">
+
+            <TextView
+                android:id="@+id/selectIfaMemberLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/ifa_member_text"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend's Username"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/friendUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint=""
+                        android:inputType="textCapWords"
+                        android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ifaFriendName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/bottom_arrow"
+                android:padding="10dp"
+                android:text="Friend's Name"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/selectLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/bottom_arrow"
+                android:padding="10dp"
+                android:text="Select A Location"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/selectDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/bottom_arrow"
+                android:padding="10dp"
+                android:text="Select A Session"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/viewProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:text="VIEW PROFILE"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <Button
+                        android:id="@+id/sendRequest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:text="SEND INVITE"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nonIfaMemberLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="@string/non_ifa_member"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nonIfaMemberLabel"
+                    android:textColorHint="@color/darkGrey"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                    <EditText
+                        android:id="@+id/friendname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Friend's Name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/editTextLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input1"
+                    android:textColorHint="@color/darkGrey"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                    <EditText
+                        android:id="@+id/friendEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Friend's Email"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/editTextLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input2"
+                    android:textColorHint="@color/darkGrey"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout2">
+
+                    <EditText
+                        android:id="@+id/friendMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top"
+                        android:hint="Message"
+                        android:inputType="textCapWords"
+                        android:lines="4"
+                        app:backgroundTint="@color/editTextLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/autoCheck"
+                    android:layout_below="@+id/input3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:visibility="gone"
+                    android:text="Auto Player Create(the invitee will need to get a player automatically created or he will use this app as a parent and will add players themselves)"/>
+                <TextView
+                    android:id="@+id/textcheckBox"
+                    android:layout_below="@+id/autoCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:visibility="visible"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Auto Player Create(the invitee will need to get a player automatically created or he will use this app as a parent and will add players themselves)"/>
+                <Button
+                    android:id="@+id/sendinvite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/textcheckBox"
+                    android:background="@color/yellow"
+                    android:text="SEND INVITE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

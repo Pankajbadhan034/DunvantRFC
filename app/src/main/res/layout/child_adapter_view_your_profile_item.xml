@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAVOURITE TEAM"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:id="@+id/fav_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="League King"
+        android:paddingLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAVOURITE PLAYER"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:id="@+id/fav_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="League King"
+        android:paddingLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAVOURITE POSITION"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:id="@+id/fav_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="League King"
+        android:paddingLeft="10dp"/>
+</LinearLayout>

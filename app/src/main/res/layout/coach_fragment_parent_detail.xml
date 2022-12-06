@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/lblParentContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent Contact Details"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/parentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent Name: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/parentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent Email: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/parentContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent Contact No: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/medicalCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medical Condition: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Name: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/fieldCLub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Club: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

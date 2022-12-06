@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "192444956417",
+    "project_id": "dunvantrfc-e950d",
+    "storage_bucket": "dunvantrfc-e950d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192444956417:android:7ed3d837c39c197e67e500",
+        "android_client_info": {
+          "package_name": "com.Dunvant.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192444956417-dim78eak0c8mfqluch5qkrq8m222ev7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhztkkIXnwunfWYheucPT5KwInT4JE6jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192444956417-dim78eak0c8mfqluch5qkrq8m222ev7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192444956417:android:1414cf7c7b36a99e67e500",
+        "android_client_info": {
+          "package_name": "com.dunvant.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192444956417-dim78eak0c8mfqluch5qkrq8m222ev7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhztkkIXnwunfWYheucPT5KwInT4JE6jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192444956417-dim78eak0c8mfqluch5qkrq8m222ev7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/isTrial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booked A Trial?"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/childrenNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Children Names"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/termName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Term name"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timings "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ageGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age Group"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/datesListView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/lightGrey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SESSION PAYMENT"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sessionPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

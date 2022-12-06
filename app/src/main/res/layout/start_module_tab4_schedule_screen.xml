@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".startModule.StartModuleTab4ScheduleScreen"
+    android:background="@color/darkBlue">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="SCHEDULE"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+<!--    <ListView-->
+<!--        android:id="@+id/listView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<Button
+    android:id="@+id/buttonClick"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="CLICK"/>
+
+    <com.dunvant.application.startModule.CalendarEvent
+        android:id="@+id/calender_event"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:month_color="@color/darkBlue"
+        app:current_month_day_color="@color/darkBlue"
+        app:week_name_color="@color/blueColorNew"
+        app:selector_color="@color/blueColorNew"
+        app:off_month_day_color="@color/red"
+        app:selected_day_text_color="@color/darkBlue"
+        android:visibility="visible"/>
+    <com.events.calendar.views.EventsCalendar
+        android:id="@+id/eventsCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:overScrollMode="never"
+        app:datesTextSize="16sp"
+        app:eventDotColor="#ff0000"
+        app:isBoldTextOnSelectionEnabled="true"
+        app:monthTitleColor="#ffffff"
+        app:monthTitleTextSize="16sp"
+        app:primaryTextColor="#c4c4c4"
+        app:secondaryTextColor="#666666"
+        app:selectedTextColor="#000000"
+        app:selectionColor="#ffe600"
+        app:weekHeaderColor="#c6c6c6"
+        app:rangeSelectionColor="#ffe600"
+        app:rangeSelectionStartColor="#c1ae01"
+        app:rangeSelectionEndColor="#c1ae01"
+        app:weekHeaderTextSize="16sp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:gravity="center_horizontal"
+                android:background="@color/darkBlue"
+                android:text="EVENT DETAIL"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:id="@+id/dateTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@color/darkBlue"
+                android:text="DATE:"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/eventTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_margin="1dp"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@color/darkBlue"
+                android:text="Event:"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

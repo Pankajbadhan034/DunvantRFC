@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_background"
+    android:padding="1dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/refundId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REFUND #"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/refundHeader"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#20FFFFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblRefundAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REFUND AMOUNT"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refundAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="value"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblRefundFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REFUND FEE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refundFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="value"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#20FFFFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblActualRefundedAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTUAL REFUNDED AMOUNT"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/actualRefundedAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="value"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

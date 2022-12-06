@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+    <ListView
+        android:id="@+id/msgList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="You have no chat with your Friends, Please go to Friends section initiate chat."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_margin="10dp"/>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottomLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="1"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button-->
+            <!--android:id="@+id/inbox"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="INBOX"-->
+            <!--android:background="@color/yellow"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/sent"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="SENT"-->
+            <!--android:background="@color/black"-->
+            <!--android:textColor="@color/white"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

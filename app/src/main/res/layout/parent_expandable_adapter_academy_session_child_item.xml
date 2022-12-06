@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ageGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age Group"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/fillingFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" FILLING FAST"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/bookingClosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" BOOKING CLOSED"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/coachingProgramName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Coaching Program name"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/genderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Gender label"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/coachName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Coach Name"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Dates"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Hours"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/sessionExpiresIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/red"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+</LinearLayout>

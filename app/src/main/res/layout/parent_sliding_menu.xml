@@ -1,0 +1,510 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/imgbg">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:drawableRight="@drawable/menutop"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePhoto"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="full name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="5dp"
+                    android:text="Address"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=" country"
+                    android:textColor="@color/yellow"
+                    android:textSize="15sp" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/dashboard"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Dashboard"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/manageChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/teammenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="My Players"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/bookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/booknowmenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Book Now"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/playerNewsfeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/timelinemenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Player Newsfeed"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/playerCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/careermenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Player Career"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/timeline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/writeapostmenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Posts"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/bookingHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/bookinghistorymenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Booking History"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/bookLeague"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/leaguemenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Join League"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/updateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/profilemenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Parent Profile"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/contactCoach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/contactmenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/uploadDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/uploaddocsmenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Documents"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/addCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/cardmenu"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Payment Information"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!--android:text="Add Card"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/help"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Help"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey" />
+
+            <!--<TextView
+                android:id="@+id/paymentDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/paymentssmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Payment Details"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/booksessionsmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Book Session"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookAPitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bookpitchsmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Book A Pitch"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookACamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bookcampsmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Book A Camp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightGrey" />
+
+            <TextView
+                android:id="@+id/bookedSessions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bookedsessionssmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Booked Sessions"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookedCamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bookedcampsmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Booked Camp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/orderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/bookedpitchsmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Booked Pitches"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightGrey" />-->
+
+            <!--<TextView
+                android:id="@+id/viewAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/attendancesmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="View Attendance"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+            <!--<TextView
+                android:id="@+id/viewMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/scoressmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Stats"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+            <!--<TextView
+                android:id="@+id/childrenActivities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/childrenactivitiessmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Children Activities"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/manageChallenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/challengessmall"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="Manage Challenge"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

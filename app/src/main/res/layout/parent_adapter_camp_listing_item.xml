@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/campImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/picCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" PHOTOS"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/gallery_pic"
+            android:drawablePadding="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/campName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ifa_footbal_camp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/lblLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOCATIONS"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <ListView
+        android:id="@+id/locationsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/yellow"
+        android:layout_marginTop="5dp"/>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        android:layout_marginBottom="10dp"/>-->
+
+</LinearLayout>

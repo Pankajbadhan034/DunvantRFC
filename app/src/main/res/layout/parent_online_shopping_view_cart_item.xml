@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE - "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_below="@+id/totalPrice"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/delete_cart"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/delete"-->
+<!--            android:layout_width="65dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@color/red"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_margin="1dp"-->
+<!--                android:background="@color/white">-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="REMOVE"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="11sp"-->
+<!--                    android:singleLine="true"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:src="@drawable/placeholder"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/delete"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:background="@drawable/cross"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_alignParentRight="true"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/image"
+            android:layout_toLeftOf="@+id/arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME - "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginRight="70dp"/>
+            <TextView
+                android:id="@+id/sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKU - "
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/variations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRODCUT VARIATIONS - "
+                android:textSize="12sp"
+                android:paddingTop="3dp"
+                android:singleLine="true"/>
+            <TextView
+                android:id="@+id/perItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PER ITEM PRICE - "
+                android:textSize="12sp"
+                android:paddingTop="3dp"
+                android:singleLine="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/linearEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:orientation="horizontal"
+                    android:background="@color/lightGrey"
+                    android:layout_margin="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="3dp">
+                        <TextView
+                            android:id="@+id/quantityStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="QUANTITY STOCK - "
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/dropdown"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/availStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AVAILABLE STOCK - "
+                android:textSize="12sp"
+                android:paddingTop="3dp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/delete"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:background="@color/red"-->
+<!--            android:text="REMOVE"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:textSize="10sp"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

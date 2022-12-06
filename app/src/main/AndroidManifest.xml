@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dunvant.application">
+
+    <application
+        android:name="com.dunvant.application.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:name">
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleMatchDetailsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTeamDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleMembershipDetailsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleMembershipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleContactUsByAdminScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleNewsFeedDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.calendarquickstart.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleCovidWellnessViewReportScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleReportsTypeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.CoachBlankActivityForCreatePostNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleAnalysisDescriptionScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.CoachBlankActivityForCreatePost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleParentCovidReportsViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleCovidWellnessScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleDailyWellnessScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4MonitorAndCovidQaScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4AttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleParentViewMarksScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4ReportsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4PicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4NewsFeedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartOfferAndLegacyScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleResourceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleWebViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleContactUsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleTab4ScheduleScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleDashboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.startModule.StartModuleEnterEmailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachTeamDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueMatchResultScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachPlayerDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueViewAllStandingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachMatchResultDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueViewAllRankingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueViewAllGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueViewAllResultScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueViewAllMatchesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeagueDetailOneScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentOnlineShoppingBillingShippingAddressScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentOnlineShoppingViewCartScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentOnlineShoppingProductDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentOnlineShoppingSubCatProductsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentOnlineShoppingParentchildProductTabsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookPitchSummaryNewForCalendarViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCustomCalenderSlotViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookFacilityNewViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentMidWeekPackageAttendanceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentMidWeekPackageChildNamesAttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewMidweekAttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachMidWeekPackageAttendanceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachMidWeekPackageChildNamesAttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.dunvant.application.RecycleViewExp" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedMidWeekHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedMidWeekScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookMidWeekProceedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookMidWeekChildrenListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentMidWeekDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentMidWeekListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachUnpaidPlayersScreen"
+            android:screenOrientation="portrait" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity
+            android:name="com.dunvant.application.SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dunvant.application.LoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentMainScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="PARENT_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dunvant.application.child.ChildMainScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="CHILD_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dunvant.application.coach.CoachMainScreen"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="COACH_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- android:windowSoftInputMode="stateVisible|adjustPan" -->
+        <activity
+            android:name="com.dunvant.application.parent.ParentSignUpScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity xmlns:tools="http://schemas.android.com/tools"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentChildDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentAddChildScreen"
+            android:screenOrientation="portrait" /> <!-- Using account jim@ifasport.com -->
+        <activity
+            android:name="com.dunvant.application.parent.ParentChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentUploadDocumentsScreen"
+            android:screenOrientation="portrait" /> <!-- Google Maps From Account jim@ifasport.com -->
+        <activity
+            android:name="com.dunvant.application.parent.ParentAcademyDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyThree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyFour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCampDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookCampScreenOLD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCampBookingHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentLeagueDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentJoinLeagueScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentFacilityDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademySummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentManageChallengesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentChallengeDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedSessionHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookPitchScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentPreviewDocumentScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCampMapScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCampGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachViewSessionDatesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachMoveChildScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachChildScoreDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentChildReportScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookPitchSummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachSetChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachViewChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachAcceptedMembersScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachLeaderboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachEditChallengeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyGalleryAddNewPhotoScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyGallerySingleImageScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyGalleryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyFriendRequestsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyFriendSendMessageScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyFriendProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyFriendSendInviteScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyMessageDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMyMessagesReplyScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildManageChallengesDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildManageChallengesAchievedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildPostViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildTrackWorkoutScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildTrackingMapViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildTrackingHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildTrackingHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentPitchHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentAcademyGalleryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedSessionsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedPitchesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookedCampsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentRequestTrialScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCreatePostScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachCreatePostScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentChildTimeline"
+            android:screenOrientation="portrait" /> <!-- FCM working from jim@ifasport.com account -->
+        <activity
+            android:name="com.dunvant.application.parent.ParentPaymentGatewayWebViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentStatusScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildAllCommentsReadScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildChooseMusicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildChooseSubMusicScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildRecordVideoMergeMp3Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildCompleteRecordingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildVideoHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentAcademyListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentFacilityListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentCampsListingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildRecordVideoScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildVideoFilterScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildSuggestionUserProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewAttendanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewMarksScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewChildrenActivitiesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildCutAudioWaveScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachUploadDocumentsScreen"
+            android:screenOrientation="portrait" />
+<!--        <activity-->
+<!--            android:name="com.dunvant.application.child.smartBand.ChildHomeSmartBandScreen"-->
+<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookCampScreenNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.smartBand.ChildSportSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.smartBand.ChildHeartRateSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.smartBand.ChildSportDetailSmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.smartBand.ChildSportSmartBandHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.smartBand.ChildHeartRateHistorySmartBandScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentChildActivityStatsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".child.ChildRecordSlowFastvideoNewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildMessageDetailImageVideoViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildViewProfileGalleryImageViewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentLeaderboardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewImageInFullScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewVideoInFullScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildChallengesLeaderBoardScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentShowManageChildren"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookCampSummaryScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachMovedDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.coach.CoachScoreDatesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentViewTermsAndConditionsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.child.ChildBlankActivityForCreatePost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentAcademyListingWithFiltersScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyThreeFilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookAcademyFourFilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentNetPaymentZeroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dunvant.application.parent.ParentBookPitchChooseGameScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.dunvant.application.coach.CoachRugbyScreen"
+            android:screenOrientation="portrait" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfPvl28Cf3AIe0VVurwdca1hzxjrDRkok" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification_copy" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fcf936bf189539e922201029e8d0d5923f8ff837" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider6978744498862697"
+            android:exported="true" />
+
+        <service
+            android:name="com.dunvant.application.child.ChildLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="singleTask" /> <!-- <activity android:name=".child.ChildYouTubePlayerScreen" /> -->
+        <service android:name="com.dunvant.application.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.dunvant.application.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.dunvant.application.child.smartBand.TimeService"
+            android:enabled="true"
+            android:process=":remote"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="COM.ACTION.TIMESERVICE" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+<!--    <uses-permission android:name="android.permission.USE_CREDENTIALS" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<!--    <uses-permission android:name="android.permission.READ_CALENDAR" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_CALENDAR" />-->
+
+</manifest>

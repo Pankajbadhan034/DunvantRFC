@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/approvePost"
+            android:layout_toRightOf="@+id/profilePhoto"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post by:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/postedOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted on:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:textSize="16sp"
+
+                android:autoLink="web|email"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/approvePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/deletePost"
+            android:src="@drawable/tickn" />
+
+        <ImageView
+            android:id="@+id/deletePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/crossn" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/videoThumb"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

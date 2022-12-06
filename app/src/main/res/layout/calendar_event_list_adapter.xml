@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkBlue"
+    android:id="@+id/linear">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="DATE:"/>
+        <TextView
+            android:id="@+id/organiser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="DATE:"/>
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="START TIME : N/A"/>
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="END TIME : N/A"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/postcommentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD COMMENT"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="Your Comment"
+        android:inputType="textMultiLine|textCapWords"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:background="@drawable/smallfield"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="POST COMMENT"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"/>
+    <!--<Button-->
+        <!--android:id="@+id/allComments"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/black"-->
+        <!--android:textColor="@color/yellow"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:text="Comments"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/allLikes"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/black"-->
+        <!--android:textColor="@color/yellow"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:text="Likes"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+</LinearLayout>

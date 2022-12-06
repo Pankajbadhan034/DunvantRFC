@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/ageGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Name"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@color/black"/>
+
+    <ListView
+        android:id="@+id/dateResultListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:divider="@color/white"/>
+</LinearLayout>

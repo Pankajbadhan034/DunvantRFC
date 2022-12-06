@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child Name"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/coachingProgramName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program Name"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/termName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Term Name"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timings"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Name"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp" />
+
+    <ListView
+        android:id="@+id/bookingDatesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:padding="1dp"
+        android:background="@drawable/rectangle_background"/>
+</LinearLayout>

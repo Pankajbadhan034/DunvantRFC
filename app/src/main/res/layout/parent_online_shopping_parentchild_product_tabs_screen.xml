@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".parent.ParentOnlineShoppingParentchildProductTabsScreen"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MERCHANDISE"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/circleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cart"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/badgeText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/badge_circle_white"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/subCat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SUB CATEGORIES"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/products"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="PRODUCTS"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+<!--    <GridView-->
+<!--        android:id="@+id/gridView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        android:horizontalSpacing="5dp"-->
+<!--        android:verticalSpacing="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:numColumns="2"/>-->
+<!--    <ListView-->
+<!--        android:id="@+id/listView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:visibility="gone"
+        android:verticalSpacing="5dp"/>
+
+    <GridView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:verticalSpacing="0dp"/>
+
+
+</LinearLayout>
